@@ -13,7 +13,7 @@ const ReelsPage = () => {
   useEffect(() => {
     const fetchReels = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/reel/feed", {
+        const response = await axios.get("https://instagram-8x5l.onrender.com/api/reel/feed", {
           withCredentials: true,
         });
         setReels(response.data.reels || []);

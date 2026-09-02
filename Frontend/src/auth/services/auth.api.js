@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const authApi = axios.create({
-  baseURL: "http://localhost:3000/api/auth",
+  baseURL: "https://instagram-8x5l.onrender.com/api/auth",
   withCredentials: true,
 });
 

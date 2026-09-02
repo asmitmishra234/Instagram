@@ -22,9 +22,12 @@ const ProfilePage = () => {
     if (!user?.id && !user?._id) return;
 
     try {
-      const response = await axios.get(`http://localhost:3000/api/auth/${user.id || user._id}/profile`, {
-        withCredentials: true,
-      });
+   const response = await axios.get(
+  `https://instagram-8x5l.onrender.com/api/auth/${user.id || user._id}/profile`,
+  {
+    withCredentials: true,
+  }
+);
       setProfile(response.data);
     } catch (error) {
       console.error(error);

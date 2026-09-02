@@ -37,7 +37,7 @@ const HomePage = () => {
 
   const fetchStories = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/story/feed", {
+      const response = await axios.get("https://instagram-8x5l.onrender.com/api/post/feed", {
         withCredentials: true,
       });
       setStories(response.data.stories || []);

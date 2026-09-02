@@ -2,17 +2,17 @@
 import axios from "axios";
 
 const postApi = axios.create({
-  baseURL: "http://localhost:3000/api/post",
+  baseURL: "https://instagram-8x5l.onrender.com/api/post",
   withCredentials: true,
 });
 
 const storyApi = axios.create({
-  baseURL: "http://localhost:3000/api/story",
+ baseURL: "https://instagram-8x5l.onrender.com/api/story",
   withCredentials: true,
 });
 
 const reelApi = axios.create({
-  baseURL: "http://localhost:3000/api/reel",
+ baseURL: "https://instagram-8x5l.onrender.com/api/reel",
   withCredentials: true,
 });
 
