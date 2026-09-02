@@ -11,7 +11,10 @@ app.use(express.json())
 
 app.use(
   cors({
-    origin: "https://instagram-1-lllp.onrender.com",
+    origin: [
+      "http://localhost:5173",
+      "https://instagram-1-lllp.onrender.com",
+    ],
     credentials: true,
   })
 );
