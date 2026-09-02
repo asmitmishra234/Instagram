@@ -8,6 +8,7 @@ const suggestions = [
   { name: "cristiano", handle: "@cristiano", userId: null },
   { name: "wanderlust", handle: "@wanderlust", userId: null },
   { name: "stylehub", handle: "@stylehub", userId: null },
+  {name:"Asmit Mishra", handle:"@SoftwareEngineeer", userId:null}
 ];
 
 const HomePage = () => {

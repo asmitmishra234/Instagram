@@ -27,8 +27,12 @@ export const getMeApi = async () => {
 
 export const updateProfileApi = async (data) => {
   const isFormData = data instanceof FormData;
+
   const response = await authApi.put("/update-profile", data, {
-    headers: isFormData ? { "Content-Type": "multipart/form-data" } : {},
+    headers: isFormData
+      ? { "Content-Type": "multipart/form-data" }
+      : {},
   });
+
   return response.data;
 };
