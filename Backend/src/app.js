@@ -11,10 +11,10 @@ app.use(express.json())
 
 app.use(
   cors({
-    origin: "https://instagram-8x5l.onrender.com",
+    origin: "https://instagram-1-lllp.onrender.com",
     credentials: true,
   })
-)
+);
 
 
 app.use('/api/auth',appRouter)
