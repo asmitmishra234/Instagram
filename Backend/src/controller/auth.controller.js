@@ -40,11 +40,11 @@ export async function register(req, res) {
             expiresIn: "7d",
         });
 
-        res.cookie("accessToken", token, {
-            httpOnly: true,
-            secure: false,
-            sameSite: "lax",
-        });
+ res.cookie("accessToken", token, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+});
 
         return res.status(201).json({
             message: "Registration Successful",
@@ -98,11 +98,11 @@ export async function login(req, res) {
             expiresIn: "7d",
         });
 
-        res.cookie("accessToken", token, {
-            httpOnly: true,
-            secure: false,
-            sameSite: "lax",
-        });
+    res.cookie("accessToken", token, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "none",
+});
 
         return res.status(200).json({
             message: "Login Successfull",
