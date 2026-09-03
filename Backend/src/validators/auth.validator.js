@@ -2,7 +2,7 @@ import { body, validationResult } from "express-validator";
 
 export const registerValidator = [
     body("userName")
-    
+         .trim()
         .notEmpty()
         .withMessage("Username is required")
         .isLength({ min: 3, max: 20 })
